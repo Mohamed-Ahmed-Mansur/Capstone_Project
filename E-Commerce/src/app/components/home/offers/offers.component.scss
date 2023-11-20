@@ -1,0 +1,50 @@
+
+.slider{
+    position: relative;
+}
+
+.slider .slide-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.slider .slide-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    visibility: hidden; 
+    cursor: pointer;
+}
+
+
+.slide-track{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.slide-item{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.slide-item img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (hover: hover) {
+    .slider:hover .slide-next,
+    .slider:hover .slide-prev{
+        visibility: visible;
+    }
+
+}
